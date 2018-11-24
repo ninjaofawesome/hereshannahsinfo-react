@@ -1,3 +1,3 @@
-# HeresHannahsInfo-React: The React Version of [hereshannahs.info](https://www.hereshannahs.info)
+# HeresHannahsInfo-React: The React Version of [hereshannahs.info](http://hereshannahs.info/)
 
 More info to come soon!
