@@ -11,7 +11,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -22,16 +23,22 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add",
+      "jest --bail --findRelatedTests"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "3.16.1",
+    "jest": "19.0.1",
+    "husky": "^1.2.0",
+    "lint-staged": "3.3.1"
   }
 }
