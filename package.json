@@ -42,10 +42,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "git add",
-      "jest --bail --findRelatedTests"
-    ]
+    "*.js": ["eslint"]
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
