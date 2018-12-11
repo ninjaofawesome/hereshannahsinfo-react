@@ -1,1 +1,9 @@
-// TBD, to add mixins
+@import 'variables.scss';
+
+@mixin TitleFont($color: $gray) {
+  font-family: $default-font;
+  font-weight: 700;
+  color: $color;
+  font-size: 36px;
+  line-height: 38px;
+}

@@ -25,7 +25,7 @@
 }
 
 .appTitle {
-  color: $gray;
+  @include TitleFont();
 }
 
 @keyframes App-logo-spin {
