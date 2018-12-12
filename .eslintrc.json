@@ -10,11 +10,7 @@
   "plugins": [
     "react",
     "jsx-a11y",
-    "import",
-    "css-modules"
-  ],
-  "extends": [
-    "plugin:css-modules/recommended"
+    "import"
   ],
   "globals": {
     "window": true,

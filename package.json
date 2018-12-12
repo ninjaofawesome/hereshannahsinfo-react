@@ -57,6 +57,7 @@
     "jest": "^21.0.0",
     "jest-cli": "^23.6.0",
     "react-test-renderer": "^16.6.3",
-    "stylelint": "^9.9.0"
+    "stylelint": "^9.9.0",
+    "stylelint-config-recommended": "^2.1.0"
   }
 }
