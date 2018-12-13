@@ -8,6 +8,7 @@
 @mixin Link($color: $LivingCoral) {
   @include link-transition(350ms);
   color: $color;
+  text-decoration: none;
 
   &:hover {
     color: darken($color, 7.5%);
