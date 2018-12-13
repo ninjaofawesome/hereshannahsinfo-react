@@ -4,3 +4,13 @@
   -o-transition: all $time ease-out;
   transition: all $time ease-out;
 }
+
+@mixin Link($color: $LivingCoral) {
+  @include link-transition(350ms);
+  color: $color;
+
+  &:hover {
+    color: darken($color, 7.5%);
+    text-decoration: none;
+  }
+}
