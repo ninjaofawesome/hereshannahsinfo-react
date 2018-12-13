@@ -1,38 +1,41 @@
 {
-  "extends": "airbnb",
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2017,
-    "ecmaFeatures": {
-      "jsx": true
+    "extends": "airbnb",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "globals": {
+        "window": true,
+        "document": true,
+        "navigator": true,
+        "fetch": true,
+        "describe": true,
+        "it": true,
+        "expect": true
+    },
+    "rules": {
+        "import/no-cycle": 0,
+        "jsx-quotes": [1, "prefer-single"],
+        "react/jsx-filename-extension": [1, {
+            "extensions": [".js", ".jsx"]
+        }],
+        "import/newline-after-import": [0],
+        "eol-last": 0,
+        "operator-linebreak": 0,
+        "arrow-parens": 0,
+        "no-param-reassign": 0,
+        "no-multiple-empty-lines": 0,
+        "no-use-before-define": 0,
+        "react/jsx-one-expression-per-line": 0,
+        "react/no-unescaped-entities": 0,
+        "jsx-a11y/anchor-is-valid": 0
     }
-  },
-  "plugins": [
-    "react",
-    "jsx-a11y",
-    "import"
-  ],
-  "globals": {
-    "window": true,
-    "document": true,
-    "navigator": true,
-    "fetch": true,
-    "describe": true,
-    "it": true,
-    "expect": true
-  },
-  "rules": {
-    "import/no-cycle": 0,
-    "jsx-quotes": [2, "prefer-single"],
-    "react/jsx-filename-extension": [1, {
-      "extensions": [".js", ".jsx"]
-    }],
-    "import/newline-after-import": [0],
-    "eol-last": 0,
-    "operator-linebreak": 0,
-    "arrow-parens": 0,
-    "no-param-reassign": 0,
-    "no-multiple-empty-lines": 0,
-    "no-use-before-define": 0
-  }
 }

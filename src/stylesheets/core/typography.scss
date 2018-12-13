@@ -1,9 +1,61 @@
 @import 'variables.scss';
+@import 'mixins.scss';
 
-@mixin TitleFont($color: $gray) {
+// font mixins
+@mixin TitleFont($color: $Navy) {
   font-family: $default-font;
-  font-weight: 700;
+  font-weight: 600;
   color: $color;
-  font-size: 36px;
-  line-height: 38px;
+  font-size: 3.75rem;
+  line-height: 1.2;
+}
+
+@mixin SubtitleFont($color: $Navy) {
+  font-family: $default-font;
+  font-weight: 600;
+  color: $color;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+@mixin EyebrowFont($color: $LivingCoral) {
+  font-family: $default-font;
+  font-weight: 600;
+  color: $color;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@mixin BodyFont($color: $DarkGray) {
+  font-family: $default-font;
+  font-weight: 400;
+  color: $color;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+@mixin BodySubFont($color: $DarkGray) {
+  font-family: $default-font;
+  font-weight: 400;
+  color: $color;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include TitleFont();
+}
+
+a {
+  @include Link();
+}
+
+p {
+  @include BodyFont();
 }
