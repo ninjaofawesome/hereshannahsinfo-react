@@ -4,17 +4,17 @@ import Title from './Title';
 
 
 describe('titleComponent', () => {
-  it('renders default text if none is provided', () => {
-    const titleComponent = shallow(<Title />);
+  const titleComponent = shallow(<Title />);
 
+  it('renders default text if none is provided', () => {
     expect(titleComponent.text()).toEqual('TBD');
   });
 
-  it('should render a stock font size if one is specified', () => {
-
+  it('should render a stock font size none is specified', () => {
+    expect(titleComponent.exists('.title')).toEqual(true);
   });
 
-  it('should render a stock font color if one is specified', () => {
-
+  it('should render a stock font color none is specified', () => {
+    expect(titleComponent.children().prop('className')).toEqual('navyCopy');
   });
 });
