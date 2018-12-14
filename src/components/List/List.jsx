@@ -5,7 +5,7 @@ import styles from './List.module.scss';
 const List = () => (
   <ul className={styles.list}>
     <ListItems />
-  <ul>
+  </ul>
 );
 
 export default List;
