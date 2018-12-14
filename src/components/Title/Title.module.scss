@@ -1,0 +1,33 @@
+@import './src/stylesheets/global.scss';
+
+.title {
+  @include TitleFont();
+}
+
+.subHeadingTitle {
+  @include SubtitleFont();
+}
+
+.eyebrowTitle {
+  @include EyebrowFont();
+}
+
+.navyCopy {
+  color: $Navy;
+}
+
+.whiteCopy {
+  color: $White;
+}
+
+.darkGrayCopy {
+  color: $DarkGray;
+}
+
+.grayCopy {
+  color: $Gray;
+}
+
+.livingCoralCopy {
+  color: $LivingCoral;
+}
