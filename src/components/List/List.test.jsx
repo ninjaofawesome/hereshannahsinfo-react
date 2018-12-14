@@ -1,13 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import List from './List';
 
+
 describe('List Component', () => {
-  it('should dynamically render list items from an external data source', () => {
-
-  });
-
-  it('should not render any list items if no data is provided', () => {
-
+  it('should render a list of items', () => {
+    const list = mount(<List />);
+    console.log(list.html());
+    // expect(list.contains(<li class='listItem'>Foo</li>)).toEqual(true);
   });
 });
