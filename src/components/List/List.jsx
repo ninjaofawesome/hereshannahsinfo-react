@@ -1,6 +1,6 @@
 import React from 'react';
 import ListItems from './ListItems/ListItems';
-import data from './ListData.js';
+import data from './ListData';
 import styles from './List.module.scss';
 
 const List = () => (
