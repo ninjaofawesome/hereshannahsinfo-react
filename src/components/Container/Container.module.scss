@@ -1,1 +1,9 @@
 @import './src/stylesheets/global.scss';
+
+.wrapper {
+  display: block;
+  width: auto;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 $small;
+}
