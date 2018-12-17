@@ -1,15 +1,32 @@
 import React from 'react';
-import data from './ListData.js';
+import PropTypes from 'prop-types';
 
 import styles from './ListItems.module.scss';
 
-const ListItems = () => (
-  data.map(listItem => (
-    <li
-      key={listItem.id}
-      className={styles.listItem}
-    >{listItem.copy}</li>
-  ))
-);
+const ListItems = props => {
+  const dataObjects = Object.entries(props).map(item => item[1]);
+  return(
+    dataObjects.map(item => (
+      <li
+        key={item.id}
+        className={styles.listItem}
+      >{item.copy}</li>
+    ))
+  );
+};
+
+ListItems.propTypes = {
+  props: PropTypes.shape({
+    id: PropTypes.number,
+    copy: PropTypes.string,
+  }),
+};
+
+ListItems.defaultProps = {
+  props: {
+    id: 0,
+    copy: 'TBD',
+  },
+};
 
 export default ListItems;
