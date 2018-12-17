@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../../components/Title/Title';
 import List from '../../components/List/List';
-import styles from './App.module.scss';
+import styles from './Index.module.scss';
 
 const App = () => (
   <div className={styles.App}>
