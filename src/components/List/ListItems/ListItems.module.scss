@@ -1,0 +1,7 @@
+@import './src/stylesheets/global.scss';
+
+.listItem {
+  @include BodySubFont();
+  text-align: left;
+  margin: $xsmall 0;
+}
