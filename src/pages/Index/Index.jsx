@@ -4,7 +4,7 @@ import Title from '../../components/Title/Title';
 import List from '../../components/List/List';
 import styles from './Index.module.scss';
 
-const App = () => (
+const Index = () => (
   <div className={styles.indexPage}>
     <Container>
       <Title copy='Hello World!' />
@@ -14,4 +14,4 @@ const App = () => (
   </div>
 );
 
-export default App;
+export default Index;
