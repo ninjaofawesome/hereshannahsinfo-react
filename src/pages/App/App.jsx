@@ -10,15 +10,15 @@ const App = () => (
     <div className={styles.app}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <Link to="/work">Work</Link>
+          <Link to='/work'>Work</Link>
         </li>
       </ul>
 
-      <Route exact path="/" component={Index} />
-      <Route path="/work" component={Work} />
+      <Route exact path='/' component={Index} />
+      <Route path='/work' component={Work} />
     </div>
   </Router>
 );
