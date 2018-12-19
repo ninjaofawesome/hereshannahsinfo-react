@@ -3,3 +3,28 @@
 .navbarMenu {
   display: block;
 }
+
+.navbarMenuSection {
+  display: block;
+  border-top: 1px solid $BorderGray;
+  padding: $small 0;
+}
+
+.navbarMenuSectionTitle {
+  margin: $medium 0 $small $small;
+}
+
+.navbarMenuItem {
+  padding: 0 $small;
+  cursor: pointer;
+
+  a {
+    @include EyebrowFont($Navy);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $Navy;
+    }
+  }
+}

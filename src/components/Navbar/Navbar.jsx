@@ -31,14 +31,19 @@ class Navbar extends Component {
     return (
       <div className={styles.navbar}>
         <div className={styles.navbarMenu}>
-          <div
-            className={styles.navbarMenuLink}
-            onClick={this.toggleMenu}
-            onKeyDown={this.toggleMenu}
-            role='button'
-            tabIndex={0}
-          >
-            Menu
+          <div className={styles.navbarLinksWrapper}>
+            <div
+              className={styles.navbarMenuLink}
+              onClick={this.toggleMenu}
+              onKeyDown={this.toggleMenu}
+              role='button'
+              tabIndex={0}
+            >
+              Menu
+            </div>
+            <div className={styles.navbarIcon}>
+              <Link to='/'>Here's Hannah's Info</Link>
+            </div>
           </div>
           <div
             className={menuVisibilityStyles(this.state.visible)}
@@ -49,9 +54,6 @@ class Navbar extends Component {
           >
             <NavbarMenu />
           </div>
-        </div>
-        <div className={styles.navbarIcon}>
-          <Link to='/'>Here's Hannah's Info</Link>
         </div>
       </div>
     );

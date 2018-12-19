@@ -11,7 +11,7 @@ const ListItems = props => {
         key={item.id}
         className={styles.listItem}
       >
-        {item.copy}
+        {item.copy()}
       </li>
     ))
   );
@@ -20,14 +20,14 @@ const ListItems = props => {
 ListItems.propTypes = {
   props: PropTypes.shape({
     id: PropTypes.number,
-    copy: PropTypes.string,
+    copy: PropTypes.func,
   }),
 };
 
 ListItems.defaultProps = {
   props: {
     id: 0,
-    copy: 'TBD',
+    copy: () => <div>TBD</div>,
   },
 };
 
