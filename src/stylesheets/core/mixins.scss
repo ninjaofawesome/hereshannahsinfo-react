@@ -1,4 +1,4 @@
-@mixin link-transition($time){
+@mixin LinkTransition($time){
   -webkit-transition: all $time ease-out;
   -moz-transition: all $time ease-out;
   -o-transition: all $time ease-out;
@@ -6,7 +6,7 @@
 }
 
 @mixin Link($color: $LivingCoral) {
-  @include link-transition(350ms);
+  @include LinkTransition(350ms);
   color: $color;
   text-decoration: none;
 
@@ -14,4 +14,24 @@
     color: darken($color, 7.5%);
     text-decoration: none;
   }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@mixin PushDown($pushdownTime: 150ms) {
+  @include LinkTransition(350ms);
+  -webkit-transition: max-height $pushdownTime ease-out;
+  -moz-transition: max-height $pushdownTime ease-out;
+  -o-transition: max-height $pushdownTime ease-out;
+  transition: max-height $pushdownTime ease-out;
+}
+
+@mixin PushUp($pushupTime: 150ms) {
+  @include LinkTransition(350ms);
+  -webkit-transition: max-height $pushupTime ease-in;
+  -moz-transition: max-height $pushupTime ease-in;
+  -o-transition: max-height $pushupTime ease-in;
+  transition: max-height $pushupTime ease-in;
 }
