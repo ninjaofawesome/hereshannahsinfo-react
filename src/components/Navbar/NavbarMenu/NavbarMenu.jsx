@@ -16,6 +16,11 @@ const NavbarMenu = () => (
     </div>
     <div className={styles.navbarMenuSection}>
       <div className={styles.navbarMenuItem}>
+        <Link to='/'>
+          Home
+        </Link>
+      </div>
+      <div className={styles.navbarMenuItem}>
         <Link to='/work'>
           Work
         </Link>
