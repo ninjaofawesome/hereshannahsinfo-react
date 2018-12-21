@@ -27,7 +27,7 @@ ListItems.propTypes = {
 ListItems.defaultProps = {
   props: {
     id: 0,
-    copy: () => <div>TBD</div>,
+    copy: () => {},
   },
 };
 
