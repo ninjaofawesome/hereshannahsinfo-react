@@ -1,11 +1,10 @@
 import React from 'react';
 import ListItems from './ListItems/ListItems';
-import data from './ListData';
 import styles from './List.module.scss';
 
-const List = () => (
+const List = props => (
   <ul className={styles.list}>
-    <ListItems {...data} />
+    <ListItems {...props} />
   </ul>
 );
 

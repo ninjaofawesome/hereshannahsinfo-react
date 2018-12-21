@@ -1,4 +1,4 @@
-@mixin link-transition($time){
+@mixin LinkTransition($time){
   -webkit-transition: all $time ease-out;
   -moz-transition: all $time ease-out;
   -o-transition: all $time ease-out;
@@ -6,12 +6,16 @@
 }
 
 @mixin Link($color: $LivingCoral) {
-  @include link-transition(350ms);
+  @include LinkTransition(350ms);
   color: $color;
   text-decoration: none;
 
   &:hover {
     color: darken($color, 7.5%);
     text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
   }
 }
