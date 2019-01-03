@@ -8,7 +8,7 @@ const Index = () => (
   <div className={styles.indexPage}>
     <Container>
       <Title copy='Hello World!' />
-      <p>"Oooh baby, you are looking sickening tonight! I have got'sta get me some of those heels!" admires <a href="#">Princess Pop</a></p>
+      <p>"Oooh baby, you are looking sickening tonight! I have got'sta get me some of those heels!" admires <a href="www.google.com">Princess Pop</a></p>
       <List />
     </Container>
   </div>

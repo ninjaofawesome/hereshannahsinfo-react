@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 describe('Navbar', () => {
   it('should render a menu click option', () => {
     const navbar = shallow(<Navbar />);
-    console.log(navbar.html());
+    console.log('navbar', navbar.html());
   });
 
   it('should open the menu on button click', () => {
