@@ -7,3 +7,33 @@
   width: 100%;
   height: auto;
 }
+
+.header {
+  margin: 25% 0 0;
+  width: 100%;
+  height: auto;
+}
+
+@media #{$tablet} {
+  .header {
+    margin: 20% 0 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media #{$phablet} {
+  .header {
+    margin: 15% 0 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media #{$mobile} {
+  .header {
+    margin: 15% 0 0;
+    width: 100%;
+    height: auto;
+  }
+}

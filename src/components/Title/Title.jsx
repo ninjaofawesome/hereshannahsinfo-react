@@ -6,6 +6,8 @@ import styles from './Title.module.scss';
 const titleStyles = props => {
   return cx({
     [styles.title]: props.size === 'title' || props.size === undefined,
+    [styles.smallTitle]: props.size === 'small',
+    [styles.largeTitle]: props.size === 'large',
     [styles.subHeadingTitle]: props.size === 'subtitle',
     [styles.eyebrowTitle]: props.size === 'eyebrow',
   });
