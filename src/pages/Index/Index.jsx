@@ -14,15 +14,15 @@ const dateObj = () => {
 
 const data = [
   {
-    id: 1,
+    id: 0,
     copy: () => `As of today, I have been a developer for ${dateObj()} years.`,
   },
   {
-    id: 2,
+    id: 1,
     copy: () => 'I have a degree in fine art and I was a licenced hairdresser in 2 states!',
   },
   {
-    id: 3,
+    id: 2,
     copy: () => 'JavaScript is my primary language.',
   },
   {
@@ -41,12 +41,15 @@ const Index = () => (
         />
         <Title
           color='dark gray'
-          copy='I make things.'
+          copy='I am a Front End Engineer.'
           size='subtitle'
         />
-        <p> Here are some things that you should know about me:</p>
-        <List {...data} />
       </div>
+      <p> Here are some things that you should know about me:</p>
+      <List
+        items={data}
+        bulleted={true}
+      />
     </Container>
   </div>
 );

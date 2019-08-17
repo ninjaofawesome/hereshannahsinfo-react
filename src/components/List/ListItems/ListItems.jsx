@@ -7,10 +7,7 @@ const ListItems = props => {
   const dataObjects = Object.entries(props).map(item => item[1]);
   return (
     dataObjects.map(item => (
-      <li
-        key={item.id}
-        className={styles.listItem}
-      >
+      <li key={item.id} className={styles.listItem}>
         {item.copy()}
       </li>
     ))

@@ -1,0 +1,13 @@
+html,
+body {
+  font-family: $default-font;
+  color: $DarkGray;
+  background-color: $White;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
