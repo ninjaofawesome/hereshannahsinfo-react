@@ -14,19 +14,19 @@ const dateObj = () => {
 
 const data = [
   {
-    id: 0,
+    id: 'genInfo0',
     copy: () => `As of today, I have been a developer for ${dateObj()} years.`,
   },
   {
-    id: 1,
+    id: 'genInfo1',
     copy: () => 'I have a degree in fine art and I was a licenced hairdresser in 2 states!',
   },
   {
-    id: 2,
+    id: 'genInfo2',
     copy: () => 'JavaScript is my primary language.',
   },
   {
-    id: 3,
+    id: 'genInfo3',
     copy: () => 'I knit voraciously.',
   },
 ];
@@ -48,7 +48,7 @@ const Index = () => (
       <p> Here are some things that you should know about me:</p>
       <List
         items={data}
-        bulleted={true}
+        bulleted
       />
     </Container>
   </div>
