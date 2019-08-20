@@ -5,7 +5,7 @@ const totalTime = (dateString) => {
   const totalTime1 = (numberOfDays / 365).toFixed(1);
   const totalTime2 = (numberOfDays / 365).toFixed(2);
   const prettyTime = totalTime2 < 1.00 ? (totalTime1 * 10) : totalTime2;
-  const length = totalTime < 1.00 ? 'months' : 'years';
+  const length = totalTime2 < 1 ? 'months' : 'years';
   return `${prettyTime} ${length}`;
 };
 
