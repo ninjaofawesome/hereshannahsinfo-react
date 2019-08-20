@@ -5,7 +5,7 @@ import styles from './ListItems.module.scss';
 
 const ListItems = props => {
   const dataObjects = Object.entries(props).map(item => item[1]).filter(item => item.id !== '');
-  console.log(dataObjects);
+
   return (
     dataObjects.map(item => (
       <li key={`listItem_${item.id}`} className={styles.listItem}>

@@ -8,4 +8,23 @@
 .bulletedList {
   display: block;
   list-style-type: disc;
+  margin-left: $large;
+}
+
+@media #{$tablet} {
+  .bulletedList {
+    margin-left: $medium;
+  }
+}
+
+@media #{$phablet} {
+  .bulletedList {
+    margin-left: $small;
+  }
+}
+
+@media #{$mobile} {
+  .bulletedList {
+    margin-left: $small;
+  }
 }
