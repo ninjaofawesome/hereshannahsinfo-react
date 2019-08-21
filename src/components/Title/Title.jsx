@@ -25,7 +25,7 @@ const copyColor = props => {
 
 const Title = props => (
   <div className={titleStyles(props)}>
-    <span className={copyColor(props)}>{props.copy}</span>
+    <span className={copyColor(props)}>{props.children}</span>
   </div>
 );
 
@@ -40,11 +40,11 @@ titleStyles.defaultProps = {
 };
 
 Title.propTypes = {
-  copy: PropTypes.string,
+  children: PropTypes.node,
 };
 
 Title.defaultProps = {
-  copy: 'TBD',
+  children: '',
 };
 
 export default Title;
