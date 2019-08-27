@@ -14,10 +14,12 @@
 
 .subHeadingTitle {
   @include SubtitleFont();
+  margin-bottom: $small;
 }
 
 .eyebrowTitle {
   @include EyebrowFont();
+  margin-bottom: $small;
 }
 
 .navyCopy {

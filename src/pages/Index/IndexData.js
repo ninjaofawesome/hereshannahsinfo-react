@@ -17,14 +17,18 @@ export const genInfoData = [
   },
   {
     id: 'genInfo1',
-    copy: () => 'I have a degree in fine art and I was a licenced hairdresser in 2 states!',
-  },
-  {
-    id: 'genInfo2',
     copy: () => 'JavaScript is my primary language.',
   },
   {
+    id: 'genInfo2',
+    copy: () => 'I love being a Front End Engineer.',
+  },
+  {
     id: 'genInfo3',
+    copy: () => 'I have a BFA in Fashion Design and (lapsed) hairdressing licences in 2 states.',
+  },
+  {
+    id: 'genInfo4',
     copy: () => 'I knit voraciously.',
   },
 ];
@@ -36,7 +40,7 @@ export const techInfoData = [
   },
   {
     id: 'techInfo1',
-    copy: () => `I've been on the Growth Team for ${totalTime('01/07/2019')}.  Before that, I was on the OTT team.`,
+    copy: () => `I've been on the Growth Team for ${totalTime('01/07/2019')}.  Before that, I was on the OTT (Over The Top) team.`,
   },
   {
     id: 'techInfo2',

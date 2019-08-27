@@ -9,22 +9,26 @@
   display: block;
   list-style-type: disc;
   margin-left: $large;
+  margin-bottom: $medium;
 }
 
 @media #{$tablet} {
   .bulletedList {
     margin-left: $medium;
+    margin-bottom: $small;
   }
 }
 
 @media #{$phablet} {
   .bulletedList {
     margin-left: $small;
+    margin-bottom: $xsmall;
   }
 }
 
 @media #{$mobile} {
   .bulletedList {
     margin-left: $small;
+    margin-bottom: $xsmall;
   }
 }
