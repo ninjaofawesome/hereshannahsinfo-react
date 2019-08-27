@@ -1,4 +1,4 @@
-const totalTime = (dateString) => {
+export const totalTime = (dateString) => {
   const startDate = new Date(dateString).getTime();
   const today = new Date().getTime();
   const numberOfDays = (today - startDate) / (1000 * 3600 * 24);
