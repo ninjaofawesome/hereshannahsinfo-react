@@ -34,36 +34,36 @@ class Index extends Component {
   }
 
   generalInfo(){
-    if (this.state.weather !== null){
-      return (
-        [
-           {
-             id: 'genInfo0',
-             copy: () => `As of today, I have been a developer for ${totalTime('03/14/2015')}.`,
-           },
-           {
-             id: 'genInfo1',
-             copy: () => 'JavaScript is my primary language.',
-           },
-           {
-             id: 'genInfo2',
-             copy: () => 'I love being a Front End Engineer.',
-           },
-           {
-             id: 'genInfo3',
-             copy: () => 'I have a BFA in Fashion Design and (lapsed) hairdressing licences in 2 states.',
-           },
-           {
-             id: 'genInfo4',
-             copy: () => `Today in New York it will be ${this.state.weather.hourly.summary}`,
-           },
-         ]
-      )
-    }
+
+    const weather = (Object.keys(this.state.weather).length === 0 && this.state.weather.constructor === Object) ? '' : this.state.weather.hourly.summary.toLowerCase();
+
+    return (
+      [
+         {
+           id: 'genInfo0',
+           copy: () => `As of today, I have been a developer for ${totalTime('03/14/2015')}.`,
+         },
+         {
+           id: 'genInfo1',
+           copy: () => 'JavaScript is my primary language.',
+         },
+         {
+           id: 'genInfo2',
+           copy: () => 'I love being a Front End Engineer.',
+         },
+         {
+           id: 'genInfo3',
+           copy: () => 'I have a BFA in Fashion Design and (lapsed) hairdressing licences in 2 states.',
+         },
+         {
+           id: 'genInfo4',
+           copy: () => `Today in New York it will be ${weather}`,
+         },
+       ]
+    )
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className={styles.indexPage}>
         <Container>
@@ -80,10 +80,10 @@ class Index extends Component {
           </div>
           <p>Here are some things that you should know about me:</p>
           <List
-            items={genInfoData}
+            items={this.generalInfo()}
             bulleted
           />
-          <p>It's amazing that I have found a way to let my creativity transcend many mediums. From technical fashion design to cutting hair to being an engineer, I enjoy figuring out how things work, and then make them work efficiently and elegantly.</p>
+          <p>It's amazing that I have found a way to let my creativity transcend many mediums. From technical fashion design to cutting hair to being an engineer, I enjoy figuring out how things work, and then make them work efficiently (and elegantly).</p>
           <Title
             color='dark gray'
             size='subtitle'

@@ -10,41 +10,18 @@ export const totalTime = (dateString) => {
 };
 
 
-export const genInfoData = [
-  {
-    id: 'genInfo0',
-    copy: () => `As of today, I have been a developer for ${totalTime('03/14/2015')}.`,
-  },
-  {
-    id: 'genInfo1',
-    copy: () => 'JavaScript is my primary language.',
-  },
-  {
-    id: 'genInfo2',
-    copy: () => 'I love being a Front End Engineer.',
-  },
-  {
-    id: 'genInfo3',
-    copy: () => 'I have a BFA in Fashion Design and (lapsed) hairdressing licences in 2 states.',
-  },
-  {
-    id: 'genInfo4',
-    copy: () => 'I knit voraciously.',
-  },
-];
-
 export const techInfoData = [
   {
     id: 'techInfo0',
-    copy: () => `I've been a front end engineer at Vimeo for ${totalTime('07/10/2017')}.  I've been on the Growth Team for ${totalTime('01/07/2019')}.  Before that, I was on the OTT team.`,
+    copy: () => `I've been a front end engineer at Vimeo for ${totalTime('07/10/2017')}.  I've been on the Growth Team for ${totalTime('01/07/2019')}.  Before that, I was on the OTT team, where I made tools that help creators to launch their own subscription based channels.`,
   },
   {
     id: 'techInfo1',
-    copy: () => `I've been on the Growth Team for ${totalTime('01/07/2019')}.  Before that, I was on the OTT (Over The Top) team.`,
+    copy: () => `I've been using React and Redux for over ${totalTime('2/1/2017')} years on a daily basis, and I'm gaining more proficiency with TypeScript since switching teams.`,
   },
   {
     id: 'techInfo2',
-    copy: () => "I've also been lucky enough to be a front end engineer at Fast Company, ESPN, and a couple of dev shops.",
+    copy: () => "In addition to the stuff that I do every day technically, it's been amazing to be on hiring panels in my current position, mentoring summer interns is incredibly enriching, and leading hack week projects have led to meeting some wonderful people I wouldn't have otherwise.  I enjoy being well rounded in my career and finding opportunities to challenge myself in different ways."
   },
 ];
 
