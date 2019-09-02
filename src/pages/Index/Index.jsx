@@ -4,7 +4,6 @@ import Container from '../../components/Container/Container';
 import Title from '../../components/Title/Title';
 import List from '../../components/List/List';
 import {
-  genInfoData,
   techInfoData,
   totalTime,
 } from './IndexData';
@@ -15,7 +14,7 @@ class Index extends Component {
     super();
     this.state = {
       weather: {},
-    }
+    };
     this.getWeatherData = this.getWeatherData.bind(this);
     this.generalInfo = this.generalInfo.bind(this);
   }
@@ -26,41 +25,38 @@ class Index extends Component {
 
   getWeatherData() {
     fetch('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c421e91928f6e782525fdb451b666ede/42.3601,-71.0589')
-        .then(res => res.json())
-        .then((data) => {
-          this.setState({ weather: data })
-         })
-        .catch(console.log)
+      .then(res => res.json())
+      .then((data) => {
+        this.setState({ weather: data });
+      })
+      .catch(console.log);
   }
 
-  generalInfo(){
-
+  generalInfo() {
     const weather = (Object.keys(this.state.weather).length === 0 && this.state.weather.constructor === Object) ? '' : this.state.weather.hourly.summary.toLowerCase();
 
     return (
-      [
-         {
-           id: 'genInfo0',
-           copy: () => `As of today, I have been a developer for ${totalTime('03/14/2015')}.`,
-         },
-         {
-           id: 'genInfo1',
-           copy: () => 'JavaScript is my primary language.',
-         },
-         {
-           id: 'genInfo2',
-           copy: () => 'I love being a Front End Engineer.',
-         },
-         {
-           id: 'genInfo3',
-           copy: () => 'I have a BFA in Fashion Design and (lapsed) hairdressing licences in 2 states.',
-         },
-         {
-           id: 'genInfo4',
-           copy: () => `Today in New York it will be ${weather}`,
-         },
-       ]
-    )
+      [{
+        id: 'genInfo0',
+        copy: () => `As of today, I have been a developer for ${totalTime('03/14/2015')}.`,
+      },
+      {
+        id: 'genInfo1',
+        copy: () => 'JavaScript is my primary language.',
+      },
+      {
+        id: 'genInfo2',
+        copy: () => 'I love being a Front End Engineer.',
+      },
+      {
+        id: 'genInfo3',
+        copy: () => 'I have a BFA in Fashion Design and 2 (lapsed) hairdressing licences in different states.',
+      },
+      {
+        id: 'genInfo4',
+        copy: () => `Today in New York it will be ${weather}`,
+      }]
+    );
   }
 
   render() {
@@ -98,13 +94,13 @@ class Index extends Component {
             color='dark gray'
             size='subtitle'
           >
-          What else?
+          Want to see something cool?
           </Title>
-          <p>I may have left out a thing or two.  Fortunately, I have a resume that you can view <Link to='work'>Here</Link>.</p>
+          <p>Great.  Check <Link to='work'>my work</Link> out!</p>
         </Container>
       </div>
     );
   }
-};
+}
 
 export default Index;

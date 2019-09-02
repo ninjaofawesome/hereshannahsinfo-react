@@ -6,7 +6,7 @@ import styles from './Work.module.scss';
 const Work = () => (
   <div className={styles.workPage}>
     <Container>
-      <Title copy='Work Page' />
+      <Title size="large">Work</Title>
     </Container>
   </div>
 );
