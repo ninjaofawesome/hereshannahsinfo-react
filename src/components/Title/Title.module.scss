@@ -1,15 +1,25 @@
 @import './src/stylesheets/global.scss';
 
+.largeTitle {
+  @include LargeTitleFont();
+}
+
 .title {
   @include TitleFont();
 }
 
+.smallTitle {
+  @include SmallTitleFont();
+}
+
 .subHeadingTitle {
   @include SubtitleFont();
+  margin-bottom: $small;
 }
 
 .eyebrowTitle {
   @include EyebrowFont();
+  margin-bottom: $small;
 }
 
 .navyCopy {

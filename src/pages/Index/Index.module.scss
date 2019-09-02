@@ -7,3 +7,37 @@
   width: 100%;
   height: auto;
 }
+
+.header {
+  margin: 25% 0 30px;
+  width: 100%;
+  height: auto;
+}
+
+.textBlock{
+  display: inline-block;
+}
+
+@media #{$tablet} {
+  .header {
+    margin: 20% 0 20px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media #{$phablet} {
+  .header {
+    margin: 15% 0 15px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media #{$mobile} {
+  .header {
+    margin: 15% 0 0 15px;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,12 +1,26 @@
-@import 'variables.scss';
-@import 'mixins.scss';
-
 // font mixins
+
+@mixin LargeTitleFont($color: $Navy) {
+  font-family: $default-font;
+  font-weight: 600;
+  color: $color;
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
 @mixin TitleFont($color: $Navy) {
   font-family: $default-font;
   font-weight: 600;
   color: $color;
   font-size: 3.75rem;
+  line-height: 1.2;
+}
+
+@mixin SmallTitleFont($color: $Navy) {
+  font-family: $default-font;
+  font-weight: 600;
+  color: $color;
+  font-size: 2.5rem;
   line-height: 1.2;
 }
 
@@ -58,4 +72,25 @@ a {
 
 p {
   @include BodyFont();
+  margin-bottom: $medium;
+}
+
+@media #{$tablet} {
+  p {
+    margin-bottom: $small;
+  }
+}
+
+@media #{$phablet} {
+  p {
+    margin-bottom: $small;
+  }
+
+}
+
+@media #{$mobile} {
+  p {
+    margin-bottom: $small;
+  }
+
 }
