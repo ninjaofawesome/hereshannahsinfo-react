@@ -21,7 +21,7 @@ export const techInfoData = [
   },
   {
     id: 'techInfo2',
-    copy: () => "In addition to the stuff that I do every day technically, it's been amazing to be on hiring panels in my current position, working with mentees, and leading hack week projects have led to meeting some wonderful people I wouldn't have otherwise.  I enjoy being well rounded in my career and finding opportunities to challenge myself in different ways.",
+    copy: () => "In addition to my technical work, I've also had the opportunity to be on hiring panels in my current position, work with mentees, and leading hack week projects.  I enjoy being well rounded and find different (and enjoyable) ways to challenge myself.",
   },
 ];
 

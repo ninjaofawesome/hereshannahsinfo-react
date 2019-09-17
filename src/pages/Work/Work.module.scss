@@ -4,6 +4,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
+}
+
+.header {
+  margin: 25% 0 30px;
+  width: 100%;
+  height: auto;
+}
+
+.workContainer {
+  width: 100%;
+  height: auto;
+  display: block;
 }

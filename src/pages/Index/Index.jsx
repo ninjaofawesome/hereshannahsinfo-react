@@ -79,7 +79,7 @@ class Index extends Component {
             items={this.generalInfo()}
             bulleted
           />
-          <p>It's amazing that I have found a way to let my creativity transcend many mediums. From technical fashion design to cutting hair to being an engineer, I enjoy figuring out how things work, and then make them work efficiently (and elegantly).</p>
+          <p>I'm quite happy to have found a way to let my creativity transcend many mediums. From technical fashion design to cutting hair to being an engineer, I enjoy figuring out how things work, and then make them work efficiently (and elegantly).</p>
           <Title
             color='dark gray'
             size='subtitle'
